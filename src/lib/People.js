@@ -1,6 +1,5 @@
 'use strict'
 const swapi = require('../utils/Swapi')
-const { config } = require('../config')
 const { isInteger, emptyToNull } = require('../utils/string')
 
 module.exports = ({ PeopleModel }) => {

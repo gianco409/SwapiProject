@@ -3,7 +3,6 @@
 const { config } = require('../config')
 const express = require('express')
 const asyncify = require('express-asyncify')
-const migration = require('../utils/Migration')
 const { send } = require('../network/response')
 const db = require('../db')
 const people = require('../lib/People')
@@ -91,5 +90,4 @@ api.get('/guerraDeLasGalaxiasAPI', async function (req, res, next) {
   }
 })
 
-//export default api
 module.exports = api
